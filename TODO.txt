@@ -1,0 +1,17 @@
+
+* create NEAT parameters
+* make sure all NEAT parameters are very strictly adhered to (through evolutionary process)
+* use dynamic speciation compatibility constant
+* make all parameters match (i.e. innovation_id's, or neurons)
+  it's confusing that we have the innovation number, genotype index, and Gene itself
+* consider getting innovator to construct new Genes
+* make all files formatted similarly
+* clean up Random setup
+* profile, optimize
+* find all TODO's
+* output dot files
+* NEAT save/restore state
+* network save/restore
+* separate out network code
+* make sure innovation numbers aren't overflowing
+* make innovation numbers generation-specific

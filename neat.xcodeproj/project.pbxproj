@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DD76F650486A84900D96B5E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		8DD76F6A0486A84900D96B5E /* neat.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* neat.1 */; };
+		C11C1D2F0B27CD8C00979D81 /* ConnectionGene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C11C1D190B27CD8C00979D81 /* ConnectionGene.cpp */; };
+		C11C1D300B27CD8C00979D81 /* ConnectionGene.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C11C1D1A0B27CD8C00979D81 /* ConnectionGene.h */; };
+		C11C1D310B27CD8C00979D81 /* Gene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C11C1D1B0B27CD8C00979D81 /* Gene.cpp */; };
+		C11C1D320B27CD8C00979D81 /* Gene.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C11C1D1C0B27CD8C00979D81 /* Gene.h */; };
+		C11C1D330B27CD8C00979D81 /* Genotype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C11C1D1D0B27CD8C00979D81 /* Genotype.cpp */; };
+		C11C1D340B27CD8C00979D81 /* Genotype.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C11C1D1E0B27CD8C00979D81 /* Genotype.h */; };
+		C11C1D350B27CD8C00979D81 /* Innovation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C11C1D1F0B27CD8C00979D81 /* Innovation.cpp */; };
+		C11C1D360B27CD8C00979D81 /* Innovation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C11C1D200B27CD8C00979D81 /* Innovation.h */; };
+		C11C1D390B27CD8C00979D81 /* NEAT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C11C1D230B27CD8C00979D81 /* NEAT.cpp */; };
+		C11C1D3A0B27CD8C00979D81 /* NEAT.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C11C1D240B27CD8C00979D81 /* NEAT.h */; };
+		C11C1D3B0B27CD8C00979D81 /* NeuralNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C11C1D250B27CD8C00979D81 /* NeuralNetwork.cpp */; };
+		C11C1D3C0B27CD8C00979D81 /* NeuralNetwork.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C11C1D260B27CD8C00979D81 /* NeuralNetwork.h */; };
+		C11C1D3F0B27CD8C00979D81 /* NeuronGene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C11C1D290B27CD8C00979D81 /* NeuronGene.cpp */; };
+		C11C1D400B27CD8C00979D81 /* NeuronGene.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C11C1D2A0B27CD8C00979D81 /* NeuronGene.h */; };
+		C1230D060B7466E9005F79C9 /* Species.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1230D040B7466E9005F79C9 /* Species.cpp */; };
+		C1230D070B7466E9005F79C9 /* Species.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C1230D050B7466E9005F79C9 /* Species.h */; };
+		C18013F00B2E60C500943E57 /* Innovator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C18013EC0B2E60C500943E57 /* Innovator.cpp */; };
+		C18013F10B2E60C500943E57 /* Innovator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C18013ED0B2E60C500943E57 /* Innovator.h */; };
+		C18013F20B2E60C500943E57 /* Random.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C18013EE0B2E60C500943E57 /* Random.cpp */; };
+		C18013F30B2E60C500943E57 /* Random.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C18013EF0B2E60C500943E57 /* Random.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F690486A84900D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				8DD76F6A0486A84900D96B5E /* neat.1 in CopyFiles */,
+				C11C1D300B27CD8C00979D81 /* ConnectionGene.h in CopyFiles */,
+				C11C1D320B27CD8C00979D81 /* Gene.h in CopyFiles */,
+				C11C1D340B27CD8C00979D81 /* Genotype.h in CopyFiles */,
+				C11C1D360B27CD8C00979D81 /* Innovation.h in CopyFiles */,
+				C11C1D3A0B27CD8C00979D81 /* NEAT.h in CopyFiles */,
+				C11C1D3C0B27CD8C00979D81 /* NeuralNetwork.h in CopyFiles */,
+				C11C1D400B27CD8C00979D81 /* NeuronGene.h in CopyFiles */,
+				C18013F10B2E60C500943E57 /* Innovator.h in CopyFiles */,
+				C18013F30B2E60C500943E57 /* Random.h in CopyFiles */,
+				C1230D070B7466E9005F79C9 /* Species.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08FB7796FE84155DC02AAC07 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8DD76F6C0486A84900D96B5E /* neat */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = neat; sourceTree = BUILT_PRODUCTS_DIR; };
+		C11C1D190B27CD8C00979D81 /* ConnectionGene.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectionGene.cpp; sourceTree = "<group>"; };
+		C11C1D1A0B27CD8C00979D81 /* ConnectionGene.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ConnectionGene.h; sourceTree = "<group>"; };
+		C11C1D1B0B27CD8C00979D81 /* Gene.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Gene.cpp; sourceTree = "<group>"; };
+		C11C1D1C0B27CD8C00979D81 /* Gene.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Gene.h; sourceTree = "<group>"; };
+		C11C1D1D0B27CD8C00979D81 /* Genotype.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Genotype.cpp; sourceTree = "<group>"; };
+		C11C1D1E0B27CD8C00979D81 /* Genotype.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Genotype.h; sourceTree = "<group>"; };
+		C11C1D1F0B27CD8C00979D81 /* Innovation.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Innovation.cpp; sourceTree = "<group>"; };
+		C11C1D200B27CD8C00979D81 /* Innovation.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Innovation.h; sourceTree = "<group>"; };
+		C11C1D230B27CD8C00979D81 /* NEAT.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = NEAT.cpp; sourceTree = "<group>"; };
+		C11C1D240B27CD8C00979D81 /* NEAT.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NEAT.h; sourceTree = "<group>"; };
+		C11C1D250B27CD8C00979D81 /* NeuralNetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = NeuralNetwork.cpp; sourceTree = "<group>"; };
+		C11C1D260B27CD8C00979D81 /* NeuralNetwork.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NeuralNetwork.h; sourceTree = "<group>"; };
+		C11C1D290B27CD8C00979D81 /* NeuronGene.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = NeuronGene.cpp; sourceTree = "<group>"; };
+		C11C1D2A0B27CD8C00979D81 /* NeuronGene.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NeuronGene.h; sourceTree = "<group>"; };
+		C1230D040B7466E9005F79C9 /* Species.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Species.cpp; sourceTree = "<group>"; };
+		C1230D050B7466E9005F79C9 /* Species.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Species.h; sourceTree = "<group>"; };
+		C18013EC0B2E60C500943E57 /* Innovator.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Innovator.cpp; sourceTree = "<group>"; };
+		C18013ED0B2E60C500943E57 /* Innovator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Innovator.h; sourceTree = "<group>"; };
+		C18013EE0B2E60C500943E57 /* Random.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Random.cpp; sourceTree = "<group>"; };
+		C18013EF0B2E60C500943E57 /* Random.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Random.h; sourceTree = "<group>"; };
+		C6859E8B029090EE04C91782 /* neat.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = neat.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F660486A84900D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* neat */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6859E8C029090F304C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = neat;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C1230D040B7466E9005F79C9 /* Species.cpp */,
+				C1230D050B7466E9005F79C9 /* Species.h */,
+				C18013EC0B2E60C500943E57 /* Innovator.cpp */,
+				C18013ED0B2E60C500943E57 /* Innovator.h */,
+				C18013EE0B2E60C500943E57 /* Random.cpp */,
+				C18013EF0B2E60C500943E57 /* Random.h */,
+				C11C1D190B27CD8C00979D81 /* ConnectionGene.cpp */,
+				C11C1D1A0B27CD8C00979D81 /* ConnectionGene.h */,
+				C11C1D1B0B27CD8C00979D81 /* Gene.cpp */,
+				C11C1D1C0B27CD8C00979D81 /* Gene.h */,
+				C11C1D1D0B27CD8C00979D81 /* Genotype.cpp */,
+				C11C1D1E0B27CD8C00979D81 /* Genotype.h */,
+				C11C1D1F0B27CD8C00979D81 /* Innovation.cpp */,
+				C11C1D200B27CD8C00979D81 /* Innovation.h */,
+				C11C1D230B27CD8C00979D81 /* NEAT.cpp */,
+				C11C1D240B27CD8C00979D81 /* NEAT.h */,
+				C11C1D250B27CD8C00979D81 /* NeuralNetwork.cpp */,
+				C11C1D260B27CD8C00979D81 /* NeuralNetwork.h */,
+				C11C1D290B27CD8C00979D81 /* NeuronGene.cpp */,
+				C11C1D2A0B27CD8C00979D81 /* NeuronGene.h */,
+				08FB7796FE84155DC02AAC07 /* main.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76F6C0486A84900D96B5E /* neat */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6859E8C029090F304C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				C6859E8B029090EE04C91782 /* neat.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F620486A84900D96B5E /* neat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "neat" */;
+			buildPhases = (
+				8DD76F640486A84900D96B5E /* Sources */,
+				8DD76F660486A84900D96B5E /* Frameworks */,
+				8DD76F690486A84900D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = neat;
+			productInstallPath = "$(HOME)/bin";
+			productName = neat;
+			productReference = 8DD76F6C0486A84900D96B5E /* neat */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "neat" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* neat */;
+			projectDirPath = "";
+			targets = (
+				8DD76F620486A84900D96B5E /* neat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F640486A84900D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76F650486A84900D96B5E /* main.cpp in Sources */,
+				C11C1D2F0B27CD8C00979D81 /* ConnectionGene.cpp in Sources */,
+				C11C1D310B27CD8C00979D81 /* Gene.cpp in Sources */,
+				C11C1D330B27CD8C00979D81 /* Genotype.cpp in Sources */,
+				C11C1D350B27CD8C00979D81 /* Innovation.cpp in Sources */,
+				C11C1D390B27CD8C00979D81 /* NEAT.cpp in Sources */,
+				C11C1D3B0B27CD8C00979D81 /* NeuralNetwork.cpp in Sources */,
+				C11C1D3F0B27CD8C00979D81 /* NeuronGene.cpp in Sources */,
+				C18013F00B2E60C500943E57 /* Innovator.cpp in Sources */,
+				C18013F20B2E60C500943E57 /* Random.cpp in Sources */,
+				C1230D060B7466E9005F79C9 /* Species.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923208733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = "$(HOME)/bin";
+				PRODUCT_NAME = neat;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB923308733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/bin";
+				PRODUCT_NAME = neat;
+			};
+			name = Release;
+		};
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = NO;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = NO;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "neat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923208733DC60010E9CD /* Debug */,
+				1DEB923308733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "neat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
