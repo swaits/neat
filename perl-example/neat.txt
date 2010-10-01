@@ -1,0 +1,176 @@
+Generations
+
+# calculate number of offspring allowed per species
+for each species, 
+	identify the average and the min/max fitness values
+	add 1 to all of those numbers (for mathematical simplicity)
+take the sum of the averages
+for each species
+	divide the total by the species average
+	multiply that number by the target population size
+	subtract from it that number times stagnant generations count
+	store the floor()ed result as allowed offspring count
+count the total offspring allocated above
+if less than target population size
+	allocate remaining to most-fit species
+for each species
+	multiply offspring by 10% to get the 'elitism' offspring count
+	if elitism less than 2, set it at 2
+	if this is more than the total offspring allowed, species dies
+	subtract the elitism count from the allowed count to get remaining
+	allocate 50% to be created via crossover
+		50% will include only some weights from less fit parent
+		50% will include one additional structural element, too
+	and the other 50% via mutation
+		all of which are weight adjusted by up to 10% per weight
+		65% of which are by weight adjustment only
+		20% add a new connection
+		10% split a current connection / add node
+		 5% delete an existing connection
+
+# identify rankings within species
+for each species, 
+	make a list of members sorted by fitness, descending
+
+# identify dominance within species
+# used to determine breeding priority
+for each species
+	calculate sum of fitness values of all members of species
+	for each member of species
+		calculate fitness / sum of fitness
+
+# elitism
+take the first N networks from the sorted species member list
+copy each one, verbatim, to the next generation
+
+# mutation
+for each species
+	calculate 'remaining' as number of mutation offspring allowed
+	for each member of the species, in fitness order (descending)
+		multiply its dominance value times allowed offspring
+		round() the number to the nearest integer.
+		if number is 0, round up to 1
+		if number is greater than remaining, reduce to remaining
+		while this number is > 0
+			create a new mutation of this organism
+			and copy it to the next generation
+			decrement the number, and the 'remaining' number
+		if 'remaining' is 0, exit loop
+
+	# to mutate a single organism
+	copy the organism to a new structure
+	give the new one a new ID
+	for each connection
+		assign a new weight that is +/- up to 10% of current value
+	save random() number
+	if random < delete threshold, delete a connection
+	else if < split threshold, split a connection
+	else if < add threshold, add a connection
+
+# crossover
+for each species
+	calculate 'remaining' as number of offspring allowed, times 2
+	for each member of the species, in fitness order (descending)
+		multiply its dominance value times allowed offspring
+		round() the number to the nearest integer.
+		if number is 0, round up to 1
+		if number is greater than remaining, reduce to remaining
+		push this member onto a list of breeders <number> times
+	randomize the list of breeders
+	while the list of breeders is not empty
+		pop the first entry off the front of the list
+		search the list for the first entry that is not the same
+		while the first entry is the same as the other entry
+			pop it off and push it on to the end
+		crossover these two to make a new one
+
+	# to crossover two specimens
+	copy the more fit parent's genome
+	for each connection in the more fit parent's genome
+		if a match occurs in less fit parent
+			50/50 chance of using the weight from the less fit parent
+	50/50 chance of selecting ONE structural element from the less
+		fit parent and copying it into the new genome
+	move the newly created offspring into the next generation
+
+# speciation
+-initially, each member belongs to the species of its parents.
+-if two organisms have the same structure, they belong in the same 
+species, regardless of who their parents were.
+
+for every member of the population
+	compose a string representing the structure of the network
+	store a hash entry with structure as key
+	store in the record
+		list of members
+		highest fitness value of any member
+		total fitness of all members
+		count of members
+for each structure
+	calculate average fitness
+sort the structures by highest average fitness
+start with an empty species list
+for each structure, while species count < max
+	form a new species with that structure as basis
+	sort the members by fitness, highest first
+for the rest of the structures
+	identify the structure(s) that are most compatible with this one
+	if only one, add all members to that species
+	otherwise, assign each member to the compatible structure whose 
+	  average is closest to that of the new member
+	  and update the average for that species
+for each new species
+	build a list of records with:
+	  new species (pointer),
+	  old species name or proposed new name,
+	  number of members from that old species in this new species
+	  average fitness of those members
+	  average fitness of new species
+sort that master list by 
+	average fitness of members voting for a particular assignment
+	average fitness of new species
+	number of members voting for name
+go through the list of species name votes
+	if the proposed name is already taken, reject the vote
+	if the proposed species has already been given a name, reject
+	otherwise, assign that name to that species
+go through the list of species, in fitness order, descending
+	if the species doesn't have a name, give it a new one
+give every member the name of their new species, if different
+	
+	
+
+offspring priority per topology
+	1st place network copied verbatim - elite
+	1st elite with randomly 'adjusted' weights
+	1st elite with 'average' crossover with 2nd place
+	1st elite with 'random' crossover with 2nd place
+	2nd place network copied verbatim
+	2nd elite with randomly adjusted weights
+	1st elite with 'average' crossover with random other
+	2nd elite with 'average' crossover with random other
+	1st elite with 'random' crossover with random other
+	2nd elite with 'random' crossover with random other
+	all new weights
+
+if after allocating offspring, there remain open slots
+	one of
+		75% - add a new connection
+		20% - split a node
+		 5% - delete a connection
+	
+as topologies optimize, their improvement slows
+when it ceases to improve, the investment in it decreases
+	stagnation penalty incremented
+when an improvement is made, cut the penalty in half
+when the investment drops below threshold, the elite is 'archived'
+ and further investment in it ceases
+if a mutation produces this same topology again,
+	treat the event as an improvement
+		cut stagnation penalty in half
+		include archived elite and new member as gene pool
+
+as the investment in a topology decreases, 
+ the more resources are available for more promising avenues
+
+instead of 'species' we will call it 'topology'
